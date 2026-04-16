@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyDeal — результаты поиска</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html">SkyDeal</a>
+
+      <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a class="active" href="results.html">Билеты</a>
+        <a href="tours.html">Туры</a>
+        <a href="offers.html">Акции</a>
+        <a href="profile.html">Профиль</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="tag">Результаты поиска</span>
+          <h2>Найденные билеты</h2>
+        </div>
+        <p id="resultsInfo" class="muted"></p>
+      </div>
+
+      <div class="stack" id="resultsContainer"></div>
+    </div>
+  </main>
+
+  <script src="data/flights.js"></script>
+  <script src="js/results.js"></script>
+</body>
+</html>
