@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyDeal — авиабилеты и туры</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- AOS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html">SkyDeal</a>
+
+      <nav class="menu">
+        <a class="active" href="index.html">Главная</a>
+        <a href="flights.html">Билеты</a>
+        <a href="tours.html">Туры</a>
+        <a href="offers.html">Акции</a>
+        <a href="profile.html">Профиль</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-soft" href="login.html">Вход</a>
+        <a class="btn btn-primary" href="register.html">Регистрация</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero hero-home">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+          <span class="tag">Premium travel startup</span>
+
+          <h1>
+            Билеты, туры и выгодные скидки
+            <span class="hero-accent">в одном сервисе</span>
+          </h1>
+
+          <p class="hero-text">
+            SkyDeal — современная платформа для покупки авиабилетов и туров.
+            Пользователи получают скидки до 15% за повторные заказы,
+            а также удобный доступ к акциям, маршрутам и личному кабинету.
+          </p>
+
+          <div class="hero-actions hero-actions-spaced">
+            <a class="btn btn-primary" href="flights.html">Найти билет</a>
+            <a class="btn btn-outline" href="tours.html">Смотреть туры</a>
+          </div>
+
+          <div class="stats hero-stats">
+            <div class="stat glass-stat" data-aos="zoom-in" data-aos-delay="100">
+              <strong>120+</strong>
+              <span>направлений</span>
+            </div>
+
+            <div class="stat glass-stat" data-aos="zoom-in" data-aos-delay="200">
+              <strong>15%</strong>
+              <span>скидка лояльности</span>
+            </div>
+
+            <div class="stat glass-stat" data-aos="zoom-in" data-aos-delay="300">
+              <strong>24/7</strong>
+              <span>поддержка клиентов</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card hero-search-card" data-aos="fade-left" data-aos-duration="1000">
+          <div class="search-card-top">
+            <span class="tag">Поиск рейса</span>
+            <h3 class="block-title">Найдите идеальный перелет</h3>
+          </div>
+
+<form class="search-form" id="searchForm">
+  <div class="form-row">
+    <div class="field">
+      <label for="from">Откуда</label>
+      <input id="from" name="from" type="text" placeholder="Ташкент" />
+    </div>
+
+    <div class="field">
+      <label for="to">Куда</label>
+      <input id="to" name="to" type="text" placeholder="Стамбул" />
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="field">
+      <label for="date">Дата</label>
+      <input id="date" name="date" type="date" />
+    </div>
+
+    <div class="field">
+      <label for="classType">Класс</label>
+      <select id="classType" name="classType">
+        <option>Любой</option>
+        <option>Эконом</option>
+        <option>Бизнес</option>
+      </select>
+    </div>
+  </div>
+
+  <button class="btn btn-primary btn-full" type="submit">
+    Искать рейсы
+  </button>
+</form>
+          <div class="search-note">
+            <span class="search-note-dot"></span>
+            <p>Быстрое оформление, выгодные цены и персональные предложения</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <div>
+            <span class="tag">Преимущества</span>
+            <h2>Что делает SkyDeal сильнее</h2>
+          </div>
+
+          <p>
+            Это не просто сайт авиабилетов. Это travel-платформа с системой
+            лояльности, турами, личным кабинетом, историей заказов и
+            современным premium-дизайном.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card pro-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-badge">✈</div>
+            <h3>Билеты + туры</h3>
+            <p class="muted">
+              Пользователь может купить отдельный перелет или полноценный турпакет.
+            </p>
+          </div>
+
+          <div class="card pro-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-badge">%</div>
+            <h3>Система скидок</h3>
+            <p class="muted">
+              1 заказ — 5%, 2 заказа — 10%, 3 и больше — 15% скидки.
+            </p>
+          </div>
+
+          <div class="card pro-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-badge">★</div>
+            <h3>Премиум интерфейс</h3>
+            <p class="muted">
+              Темный современный стиль, стеклянные карточки и адаптация под телефон.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR DESTINATIONS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <div>
+            <span class="tag">Популярные направления</span>
+            <h2>Куда чаще всего летят пользователи</h2>
+          </div>
+
+          <a class="btn btn-soft" href="results.html">Все варианты</a>
+        </div>
+
+        <div class="grid-3">
+          <article class="destination-card pro-destination" data-aos="zoom-in" data-aos-delay="100">
+            <img
+              src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop"
+              alt="Дубай"
+            />
+            <div class="destination-info">
+              <span class="pill">Премиум маршрут</span>
+              <h3>Ташкент → Дубай</h3>
+              <p class="muted">Комфортный перелет и быстрый вылет</p>
+              <p class="price">от 3 100 000 сум</p>
+            </div>
+          </article>
+
+          <article class="destination-card pro-destination" data-aos="zoom-in" data-aos-delay="200">
+            <img
+              src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?q=80&w=1200&auto=format&fit=crop"
+              alt="Стамбул"
+            />
+            <div class="destination-info">
+              <span class="pill">Популярный рейс</span>
+              <h3>Ташкент → Стамбул</h3>
+              <p class="muted">Удобное направление для отдыха и бизнеса</p>
+              <p class="price">от 2 400 000 сум</p>
+            </div>
+          </article>
+
+          <article class="destination-card pro-destination" data-aos="zoom-in" data-aos-delay="300">
+            <img
+              src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop"
+              alt="Париж"
+            />
+            <div class="destination-info">
+              <span class="pill">Европа</span>
+              <h3>Ташкент → Париж</h3>
+              <p class="muted">Красивые маршруты и выгодные предложения</p>
+              <p class="price">от 5 900 000 сум</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED FLIGHTS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <div>
+            <span class="tag">Подборка рейсов</span>
+            <h2>Лучшие варианты для быстрого выбора</h2>
+          </div>
+        </div>
+
+        <div class="stack" id="featuredFlights" data-aos="fade-up" data-aos-delay="100"></div>
+      </div>
+    </section>
+
+    <!-- DISCOUNT BANNER -->
+    <section class="section">
+      <div class="container">
+        <div class="wide-banner pro-banner" data-aos="fade-up">
+          <img
+            src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1600&auto=format&fit=crop"
+            alt="Самолет"
+          />
+
+          <div class="overlay">
+            <div class="banner-content">
+              <span class="tag">SkyDeal loyalty</span>
+
+              <h2 class="banner-title">
+                Постоянные клиенты получают до 15% скидки
+              </h2>
+
+              <p class="muted banner-text">
+                Главная идея проекта — не просто продажа билетов, а сервис,
+                который мотивирует клиента возвращаться снова и снова.
+              </p>
+
+              <div class="discount-checker">
+                <div class="summary-row">
+                  <input
+                    id="orderCount"
+                    class="discount-input"
+                    type="number"
+                    placeholder="Сколько покупок?"
+                  />
+                  <button class="btn btn-primary" id="checkDiscountBtn" type="button">
+                    Проверить скидку
+                  </button>
+                </div>
+
+                <p id="discountResult" class="discount-result-text">
+                  Скидка клиента: 0%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOURS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <div>
+            <span class="tag">Туры</span>
+            <h2>Готовые турпакеты для путешествий</h2>
+          </div>
+
+          <a class="btn btn-soft" href="tours.html">Открыть все туры</a>
+        </div>
+
+        <div class="tours-grid" id="featuredTours" data-aos="fade-up" data-aos-delay="100"></div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <div>
+            <span class="tag">Отзывы</span>
+            <h2>Что говорят пользователи</h2>
+          </div>
+        </div>
+
+        <div class="review-grid">
+          <div class="card pro-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-badge">✓</div>
+            <h3>Очень удобно</h3>
+            <p class="muted">
+              Нашел билет, посмотрел туры и сразу понял, что сайт выглядит как реальный сервис.
+            </p>
+          </div>
+
+          <div class="card pro-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-badge">%</div>
+            <h3>Скидки работают</h3>
+            <p class="muted">
+              После нескольких заказов появилась скидка, это реально мотивирует пользоваться снова.
+            </p>
+          </div>
+
+          <div class="card pro-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-badge">★</div>
+            <h3>Стартап-уровень</h3>
+            <p class="muted">
+              Проект выглядит не как учебный, а как полноценная travel-платформа.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-box" data-aos="fade-up">
+          <div>
+            <span class="tag">Начни путешествие</span>
+            <h2>Открой новые направления вместе с SkyDeal</h2>
+            <p class="muted">
+              Ищи билеты, выбирай туры, используй скидки и развивай свой travel-опыт
+              в одном удобном сервисе.
+            </p>
+          </div>
+
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="flights.html">Найти билет</a>
+            <a class="btn btn-outline" href="register.html">Создать аккаунт</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">SkyDeal</div>
+        <p>Travel-платформа для покупки авиабилетов и туров онлайн.</p>
+      </div>
+
+      <div>
+        <h3>Страницы</h3>
+        <div class="footer-links">
+          <a href="flights.html">Билеты</a>
+          <a href="tours.html">Туры</a>
+          <a href="offers.html">Акции</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Контакты</h3>
+        <p>info@skydeal.uz</p>
+        <p>+998 90 123 45 67</p>
+        <p>© <span data-year></span> SkyDeal</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true
+    });
+  </script>
+
+  <script src="data/flights.js"></script>
+  <script src="data/tours.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

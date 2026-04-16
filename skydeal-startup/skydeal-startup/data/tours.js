@@ -1,0 +1,8 @@
+window.TOURS = [
+  {id:1,title:'Dubai Premium Escape',country:'ОАЭ',days:5,hotel:'Jumeirah Beach 5★',price:8900000,rating:4.9,image:'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop',desc:'Премиум тур с трансфером, завтраками и обзорной экскурсией.'},
+  {id:2,title:'Antalya Relax Week',country:'Турция',days:7,hotel:'Sunset Resort 4★',price:7200000,rating:4.8,image:'https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1200&auto=format&fit=crop',desc:'Пляжный отдых all inclusive для семьи и друзей.'},
+  {id:3,title:'Sharm Sea Holiday',country:'Египет',days:6,hotel:'Red Sea Palace 5★',price:6500000,rating:4.7,image:'https://images.unsplash.com/photo-1505761671935-60b3a7427bad?q=80&w=1200&auto=format&fit=crop',desc:'Море, снорклинг и удобный пакет с перелетом.'},
+  {id:4,title:'Paris City Lights',country:'Франция',days:4,hotel:'Louvre Central 4★',price:9900000,rating:4.9,image:'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop',desc:'Романтический тур с прогулками и билетами в музеи.'},
+  {id:5,title:'Seoul Smart Trip',country:'Южная Корея',days:6,hotel:'Gangnam Stay 4★',price:11200000,rating:4.8,image:'https://images.unsplash.com/photo-1538485399081-7c8071ed302b?q=80&w=1200&auto=format&fit=crop',desc:'Современный городской тур для любителей технологий и культуры.'},
+  {id:6,title:'Maldives Dream',country:'Мальдивы',days:8,hotel:'Blue Lagoon 5★',price:17800000,rating:5.0,image:'https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=1200&auto=format&fit=crop',desc:'Люкс-отдых с виллой, ужинами и фотографом.'}
+];

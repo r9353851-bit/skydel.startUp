@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyDeal — подтверждение</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html">SkyDeal</a>
+
+      <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="flights.html">Билеты</a>
+        <a href="tours.html">Туры</a>
+        <a href="offers.html">Акции</a>
+        <a href="profile.html">Профиль</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section confirmation-page">
+    <div class="container">
+
+      <div class="confirmation-wrapper">
+
+        <div class="confirmation-image" data-aos="fade-right" data-aos-duration="1000">
+          <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=80" alt="Самолет SkyDeal" />
+          <div class="confirmation-image-overlay">
+            <h2>Ваше путешествие почти готово ✈️</h2>
+            <p>Спасибо за бронирование через SkyDeal</p>
+          </div>
+        </div>
+
+        <div class="form-card confirmation-box" id="confirmationBox" data-aos="fade-left" data-aos-duration="1000">
+          <div class="success-icon">✔</div>
+          <h1>Бронирование подтверждено</h1>
+          <p class="confirmation-text">
+            Ваш заказ успешно создан. Детали поездки и данные пассажира отображаются ниже.
+          </p>
+
+          <div class="confirmation-info">
+            <div class="info-row">
+              <span>Номер заказа:</span>
+              <strong>#SKY2026-4581</strong>
+            </div>
+            <div class="info-row">
+              <span>Маршрут:</span>
+              <strong>Ташкент → Дубай</strong>
+            </div>
+            <div class="info-row">
+              <span>Дата вылета:</span>
+              <strong>20 апреля 2026</strong>
+            </div>
+            <div class="info-row">
+              <span>Пассажир:</span>
+              <strong>Ruslan Karimov</strong>
+            </div>
+            <div class="info-row">
+              <span>Статус:</span>
+              <strong class="status success">Подтверждено</strong>
+            </div>
+          </div>
+
+          <div class="confirmation-actions">
+            <a href="profile.html" class="btn btn-primary">Мои бронирования</a>
+            <a href="index.html" class="btn btn-secondary">На главную</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span data-year></span> SkyDeal</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/confirmation.js"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+</body>
+</html>
